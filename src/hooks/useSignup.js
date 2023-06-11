@@ -11,7 +11,7 @@ export const useSignup = () =>{
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('api/user/signup', {
+        const response = await fetch('https://mern-stack-g4bt.onrender.com/api/user/signup', {
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify({email, password})
