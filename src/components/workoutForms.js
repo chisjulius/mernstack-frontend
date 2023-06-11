@@ -17,6 +17,7 @@ const WorkoutForms = () =>{
             setError('You must be logged in')
             return
         }
+        
         const workout = { title, load, reps }
         const response = await fetch('https://mern-stack-g4bt.onrender.com/api/workouts', {
             method: 'POST',
